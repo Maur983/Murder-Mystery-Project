@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+
+# Frontend 
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+
+# Env files
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
