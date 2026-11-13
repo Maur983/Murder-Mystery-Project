@@ -2,6 +2,7 @@ import { useState } from 'react'
 import prologueRoom from '../../assets/placeholder prologue room.png'
 import ClueObject from '../ClueObject.jsx'
 import DialogueBox from '../DialogueBox.jsx'
+import { Link } from 'react-router'
 
 const dialogue = [
   'TBD 1',
@@ -58,6 +59,37 @@ function Prologue() {
           discovered={discoveredClues.includes('watch')}
           onClick={() => toggleClue('watch')}
         />
+        
+        <Link
+          to="/Upstairs"
+          className="clue-object room-exit"
+          style={{ left: '75%', top: '48%' }}
+        >
+          <span className="clue-object__marker" aria-hidden="true">↑</span>
+          <span className="clue-object__label">Staircase</span>
+          <span className="clue-object__description">Go upstairs</span>
+        </Link>
+
+        <Link
+          to="/Room1"
+          className="clue-object room-exit"
+          style={{ left: '43%', top: '55%' }}
+        >
+          <span className="clue-object__marker" aria-hidden="true">↑</span>
+          <span className="clue-object__label">Door</span>
+          <span className="clue-object__description">Go to the next Room </span>
+        </Link>
+    
+          <Link
+          to="/Room2"
+          className="clue-object room-exit"
+          style={{ left: '10%', top: '60%' }}
+        >
+          <span className="clue-object__marker" aria-hidden="true">↑</span>
+          <span className="clue-object__label">Broken Door</span>
+          <span className="clue-object__description">Go to the next Room </span>
+        </Link>
+        
       </section>
 
       <DialogueBox

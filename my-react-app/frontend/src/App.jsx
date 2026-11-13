@@ -3,8 +3,10 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-//import Nav from './components/Nav'
 import Prologue from './components/Pages/Prologue.jsx'
+import Room1 from './components/Pages/Room1.jsx'
+import Room2 from './components/Pages/Room2.jsx'
+import UpStairs from './components/Pages/UpStairs.jsx'
 
 function Home() {
   const navigate = useNavigate()
@@ -40,6 +42,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Prologue" element={<Prologue />} />
+        <Route path="/Room1" element={<Room1 />} />
+        <Route path="/Room2" element={<Room2 />} />
+        <Route path="/UpStairs" element={<UpStairs />} />
       </Routes>
     </BrowserRouter>
   )
